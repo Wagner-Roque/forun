@@ -1,0 +1,30 @@
+package com.baeldung.mapper;
+
+import com.baeldung.dto.TransactionDTO;
+import com.baeldung.entity.Transaction;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import javax.annotation.Generated;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2020-02-03T16:51:58-0200",
+    comments = "version: 1.3.0.Final, compiler: javac, environment: Java 1.8.0_221 (Oracle Corporation)"
+)
+class TransactionMapperImpl extends TransactionMapper {
+
+    @Override
+    public List<TransactionDTO> toTransactionDTO(Collection<Transaction> transactions) {
+        if ( transactions == null ) {
+            return null;
+        }
+
+        List<TransactionDTO> list = new ArrayList<TransactionDTO>( transactions.size() );
+        for ( Transaction transaction : transactions ) {
+            list.add( toTransactionDTO( transaction ) );
+        }
+
+        return list;
+    }
+}

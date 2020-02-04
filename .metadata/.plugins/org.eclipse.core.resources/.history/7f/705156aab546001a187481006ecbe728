@@ -1,0 +1,42 @@
+package com.baeldung.entity;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+public class UserBodyValues {
+    private double kilogram;
+    private double centimeter;
+    private Integer intValue;
+
+    public UserBodyValues( double kilogram, double centimeter, Integer intValue) {
+		this.kilogram = kilogram;
+		this.centimeter = centimeter;
+		this.intValue = intValue;
+	}
+
+	public double getKilogram() {
+		return kilogram;
+	}
+
+	public void setKilogram(double kilogram) {
+		this.kilogram = kilogram;
+	}
+
+	public double getCentimeter() {
+		return centimeter;
+	}
+
+	public void setCentimeter(double centimeter) {
+		this.centimeter = centimeter;
+	}
+
+	public Integer getIntValue() {
+		return intValue;
+	}
+
+	public void setIntValue(Integer intValue) {
+		this.intValue = intValue;
+	}
+}

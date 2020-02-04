@@ -1,0 +1,9 @@
+com\baeldung\mapper\SimpleSourceDestinationMapperIntegrationTest.class
+com\baeldung\mapper\unmappedproperties\DocumentMapperUnmappedPolicyUnitTest.class
+com\baeldung\mapper\CustomerDtoMapperUnitTest.class
+com\baeldung\mapper\DeliveryAddressMapperUnitTest.class
+com\baeldung\mapper\unmappedproperties\DocumentMapperUnitTest.class
+com\baeldung\mapper\unmappedproperties\DocumentMapperWithConfigUnitTest.class
+com\baeldung\mapper\EmployeeMapperUnitTest.class
+com\baeldung\mapper\PersonMapperUnitTest.class
+com\baeldung\mapper\unmappedproperties\DocumentMapperMappingIgnoreUnitTest.class

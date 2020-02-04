@@ -1,0 +1,8 @@
+package br.com.qintess.mapstruct.dto;
+
+public class EnderecoRequest {
+	
+	private String rua;
+	private Integer numero;
+	private String cidade;
+}

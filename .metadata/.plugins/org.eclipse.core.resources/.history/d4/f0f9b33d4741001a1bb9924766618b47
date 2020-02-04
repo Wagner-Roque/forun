@@ -1,0 +1,6 @@
+package br.com.qintess.mapstruct.teste;
+
+
+public class deveriaMapCarToDto {
+	
+}

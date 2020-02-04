@@ -1,0 +1,14 @@
+package br.com.qintess.mapstruct.car;
+
+import org.mapstruct.factory.Mappers;
+
+public class Mapper {
+	
+	private Mapper() {
+		
+	}
+	public static <T> T factory(final Class clazz) {
+		return Mappers.getMapper(clazz);
+	}
+	Report report = Mapper.factory(ReportMapper.class).toModel
+}

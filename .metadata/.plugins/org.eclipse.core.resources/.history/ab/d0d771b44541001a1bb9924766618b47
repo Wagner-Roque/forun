@@ -1,0 +1,6 @@
+package br.com.qintess.mapstruct.car;
+
+
+public interface CarMapper {
+	
+}

@@ -1,0 +1,23 @@
+package br.com.qintess.mapstruct;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class CarMapStructApplicationTests {
+
+	  @Test
+	  public void shouldMapCarToDto () {
+	      //dado
+	      Car car = carro novo ("Morris", 5, CarType.SEDAN);
+	  
+	      //quando
+	      CarDto carDto = CarMapper.INSTANCE.carToCarDto (car);
+	  
+	      //então
+	      assertThat (carDto) .isNotNull ();
+	      assertThat (carDto.getMake ()) .isEqualTo ("Morris");
+	      assertThat (carDto.getSeatCount ()) .isEqualTo (5);
+	      assertThat (carDto.getType ()) .isEqualTo ("SEDAN");
+	  } 
+}

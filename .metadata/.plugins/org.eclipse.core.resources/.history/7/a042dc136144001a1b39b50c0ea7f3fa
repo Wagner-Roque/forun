@@ -1,0 +1,10 @@
+package br.com.qintess.mapstruct.dto;
+
+import java.util.List;
+
+public class PessoaRequest {
+	
+	private String  nome;
+	private Integer idade;
+	private List<EnderecoRequest>endereco;
+}

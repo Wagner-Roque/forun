@@ -1,0 +1,48 @@
+package br.com.qintess.mapstruct.car;
+
+import br.com.qintess.mapstruct.cosnt.CarType;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
+
+@Getter
+@Setter
+@AllArgsConstructor
+public class Car {
+
+	private String make;
+	private int numberOfSeats;
+	private CarType tipo ;
+
+	public Car(String make, int numberOfSeats, CarType tipo) {
+		this.make = make;
+		this.numberOfSeats = numberOfSeats;
+		this.tipo= tipo;
+	}
+
+	public String getMake() {
+		return make;
+	}
+
+	public void setMake(String make) {
+		this.make = make;
+	}
+
+	public int getNumberOfSeats() {
+		return numberOfSeats;
+	}
+
+	public void setNumberOfSeats(int numberOfSeats) {
+		this.numberOfSeats = numberOfSeats;
+	}
+
+	public CarType getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(CarType tipo) {
+		this.tipo = tipo;
+	}
+
+}
